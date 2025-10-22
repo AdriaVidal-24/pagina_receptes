@@ -1,0 +1,73 @@
+body {
+	font-family: arial;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.selections {
+	width: 65%;
+}
+
+.main-recipe {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 600px;
+}
+
+.categories {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#category-viewing {
+	padding: 10px;
+	padding-right: 100px;
+}
+
+#latest-recipes {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 500px;	
+}
+
+.email {
+	display: flex;
+	justify-content: center;
+}
+
+#popular-recipes {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 40px;
+	margin-left: 5%;
+}
+
+.recipes {
+	padding: 4%;	
+}
+
+.author {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10%;
+}
+
+footer {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.inner-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
