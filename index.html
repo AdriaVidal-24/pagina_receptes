@@ -23,13 +23,13 @@
 <body>
 	<header>
 		<a href="index.html"><img src="i/logo.png" alt="Page logo" width="250px"></a>
-		<div class="selections">
-			<a class="boto-categoria" href="#categories" title="Go to category section">Categories</a>
-			<a class="boto-categoria" href="#latest-categories" title="Go to latest recipes section">Latest recipes</a>
-			<a class="boto-categoria" href="#popular-recipes" title="Go to pouplar recipes section">Most popular recipes</a>
+		<div class="selections-header">
+			<a class="boto-apartat" href="#categories" title="Go to category section">Categories</a>
+			<a class="boto-apartat" href="#latest-section" title="Go to latest recipes section">Latest recipes</a>
+			<a class="boto-apartat" href="#popular-recipes" title="Go to pouplar recipes section">Most popular recipes</a>
 		</div>
-		<a href=""><img src="i/pfp.png" class="pfp" alt="Profile picture" width="35px"></a>
-	</header>
+		<a href=""><img src="https://avatar.iran.liara.run/public" class="pfp" alt="Profile picture" width="35px"></a>
+	</header> 	
 
 	<section class="main-recipe">
 		<div>
@@ -37,7 +37,6 @@
 			<h1><strong>10 Minute Magic</strong><br>Orange Sauce</h1>
 			<button class="seerecipe">see recipe</button>
 		</div>
-		<img src="i/notfoundmain.jpg" alt="Recipe image" width="400px">
 	</section>
 
 	<section id="categories">
@@ -54,16 +53,16 @@
 
 	<section>
 		<h2 class="section-titles">Latest recipes</h2>
-		<div id="latest-categories">
+		<div id="latest-section">
 			<div class="latest-recipes">
-				<img src="i/notfoundshort.jpg" alt="Recipe image" width="550px" height="325px">
+				<img src="https://lipsum.app/550x325/f4eae5/cb997e" alt="Recipe image"width="550px" height="325px" >
 				<h2>Grandma's Butterscotch PIE</h2>
 				<p><strong>Healthy</strong></p>
 				<p>Lorem ipsum dolor sit amet consectetur adipiscing elit rhoncus tempor cursus, phasellus tempus sodales varius quis parturient augue conubia vestibulum. Orci velit fames in ultrices erat senectus eget quisque. Orci velit fames in ultrices erat senectus eget quisque.</p>
 				<button class="seerecipe">see recipe</button>
 			</div>
 			<div class="latest-recipes">
-				<img src="i/notfoundshort.jpg" alt="Recipe image" width="550px" height="325px">
+				<img src="https://lipsum.app/550x325/f4eae5/cb997e" alt="Recipe image" width="550px" height="325px">
 				<h2>10 Minute Magic Orange Sauce</h2>
 				<p><strong>Healthy</strong></p>
 				<p>Lorem ipsum dolor sit amet consectetur adipiscing elit rhoncus tempor cursus, phasellus tempus sodales varius quis parturient augue conubia vestibulum. Orci velit fames in ultrices erat senectus eget quisque. Orci velit fames in ultrices erat senectus eget quisque.</p>
@@ -77,13 +76,14 @@
 			<h3>Never miss a recipe</h3>
 			<p>Join thousands of Company subscribers and get our best recipes delivered each week!</p>
 		</div>
-		<input type="email" placeholder="Type your email">
-		<button>Send</button>
+		<div class="email-input">
+			<input type="email" placeholder="Type your email">
+			<button>Send</button>
+		</div>
 	</section>
 
 	<h2 class="section-titles">Most popular recipes</h2>
 	<section id="popular-recipes">
-
 		<article class="recipe-box">
 			<p><strong>Healthy</strong></p>
 			<h2>Grandma's Butterscotch PIE</h2>
@@ -100,29 +100,27 @@
 		</article>
 		<article class="recipe-box">
 			<p><strong>Healthy</strong></p>
-			<h2>Summer Berry Parf</h2>
+			<h2>Summer Berry Parfait</h2>
 		</article>
 	</section>
 
 
-		<section class="author">
-			<img src="i/pfp.png" alt="Profile picture" width="300px" height="300px">
-			<div>
-				<p><strong>About the Author</strong></p>
-				<h3>Jhon Doe</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipiscing elit rhoncus tempor cursus, phasellus tempus sodales varius quis parturient augue conubia vestibulum. Orci velit fames in ultrices erat senectus eget quisque, magna ornare laoreet placerat nunc nulla nullam auctor, dictumst bibendum taciti nam vivamus augue rutrum. Morbi malesuada rutrum egestas diam ligula augue massa ante erat lacus, est facilisis posuere elementum quisque fusce phasellus laoreet nibh, feugiat purus porttitor hendrerit iaculis commodo enim eros venenatis.</p>
-			</div>
-		</section>
+	<section class="author">
+		<img src="https://avatar.iran.liara.run/public" alt="Profile picture" width="300px" height="300px">
+		<div>
+			<p><strong>About the Author</strong></p>
+			<h3>Jhon Doe</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipiscing elit rhoncus tempor cursus, phasellus tempus sodales varius quis parturient augue conubia vestibulum. Orci velit fames in ultrices erat senectus eget quisque, magna ornare laoreet placerat nunc nulla nullam auctor, dictumst bibendum taciti nam vivamus augue rutrum. Morbi malesuada rutrum egestas diam ligula augue massa ante erat lacus, est facilisis posuere elementum quisque fusce phasellus laoreet nibh, feugiat purus porttitor hendrerit iaculis commodo enim eros venenatis.</p>
+		</div>
+	</section>
 	<footer>
-
-
-		<section>
+		<section class="outer-footer">
 			<img src="i/logo.png" alt="Page logo" width="250px">
 			<div class="inner-footer">
-				<div class="selections">
-					<a class="boto-categoria" href="#categories" title="Go to category section">Categories</a>
-					<a class="boto-categoria" href="#latest-categories" title="Go to latest recipes section">Latest recipes</a>
-					<a class="boto-categoria" href="#popular-recipes" title="Go to pouplar recipes section">Most popular recipes</a>
+				<div class="selections-footer">
+					<a class="boto-apartat" href="#categories" title="Go to category section">Categories</a>
+					<a class="boto-apartat" href="#latest-section" title="Go to latest recipes section">Latest recipes</a>
+					<a class="boto-apartat" href="#popular-recipes" title="Go to pouplar recipes section">Most popular recipes</a>
 				</div>
 				<div class="socials">
 					<a href="https://www.facebook.com"><img src="i/facebook.png" alt="Enllaç a facebook." width="40px"></a>
