@@ -21,103 +21,117 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-
 	<header>
 		<a href="index.html"><img src="i/logo.png" alt="Page logo" width="250px"></a>
 		<div class="selections">
-			<button>Categories</button>
-			<button>Latest recipes</button>
-			<button>Most popular recipes</button>
+			<a class="boto-categoria" href="#categories" title="Go to category section">Categories</a>
+			<a class="boto-categoria" href="#latest-categories" title="Go to latest recipes section">Latest recipes</a>
+			<a class="boto-categoria" href="#popular-recipes" title="Go to pouplar recipes section">Most popular recipes</a>
 		</div>
-		<a href=""><img src="i/pfp.png" class="pfp" alt="Profile picture" width="60px"></a>
+		<a href=""><img src="i/pfp.png" class="pfp" alt="Profile picture" width="35px"></a>
 	</header>
 
 	<section class="main-recipe">
 		<div>
 			<p>Healthy</p>
-			<h1>10 minute magic <br> Orange sauce</h1>
-			<button>See recipe</button>
+			<h1><strong>10 Minute Magic</strong><br>Orange Sauce</h1>
+			<button class="seerecipe">see recipe</button>
 		</div>
-		<img src="" alt="Recipe image" width="">
+		<img src="i/notfoundmain.jpg" alt="Recipe image" width="400px">
 	</section>
 
-	<section class="categories">
-		<p id="category-viewing">View by category:</p>
-		<div>
-			<button>Appetizers</button>
-			<button>Beverages</button>
-			<button>Desserts</button>
-			<button>Healthy</button>
+	<section id="categories">
+		<p class="category-viewing">View by category:</p>
+		<div class="categorylist">
+			<button class="category">Appetizers</button>
+			<button class="category">Beverages</button>
+			<button class="category">Desserts</button>
+			<button class="category">Healthy</button>
 		</div>
 	</section>
 
 	<hr>
 
 	<section>
-		<h2>Latest recipes</h2>
-		<div id="latest-recipes">
-			<div>
-				<img src="" alt="Recipe image">
+		<h2 class="section-titles">Latest recipes</h2>
+		<div id="latest-categories">
+			<div class="latest-recipes">
+				<img src="i/notfoundshort.jpg" alt="Recipe image" width="550px" height="325px">
 				<h2>Grandma's Butterscotch PIE</h2>
 				<p><strong>Healthy</strong></p>
-				<p></p>
-				<button>See recipe</button>
+				<p>Lorem ipsum dolor sit amet consectetur adipiscing elit rhoncus tempor cursus, phasellus tempus sodales varius quis parturient augue conubia vestibulum. Orci velit fames in ultrices erat senectus eget quisque. Orci velit fames in ultrices erat senectus eget quisque.</p>
+				<button class="seerecipe">see recipe</button>
 			</div>
-			<div>
-				<img src="" alt="Recipe image">
+			<div class="latest-recipes">
+				<img src="i/notfoundshort.jpg" alt="Recipe image" width="550px" height="325px">
 				<h2>10 Minute Magic Orange Sauce</h2>
 				<p><strong>Healthy</strong></p>
-				<p></p>
-				<button>See recipe</button>
+				<p>Lorem ipsum dolor sit amet consectetur adipiscing elit rhoncus tempor cursus, phasellus tempus sodales varius quis parturient augue conubia vestibulum. Orci velit fames in ultrices erat senectus eget quisque. Orci velit fames in ultrices erat senectus eget quisque.</p>
+				<button class="seerecipe">see recipe</button>
 			</div>
 		</div>
 	</section>
 
 	<section class="email">
-		<div>
+		<div class="email-text">
 			<h3>Never miss a recipe</h3>
 			<p>Join thousands of Company subscribers and get our best recipes delivered each week!</p>
 		</div>
-
+		<input type="email" placeholder="Type your email">
+		<button>Send</button>
 	</section>
 
+	<h2 class="section-titles">Most popular recipes</h2>
 	<section id="popular-recipes">
-		<h2>Most popular recipes</h2>
-		<div>
-			<img src="" alt="Recipe image" width="450px" class="recipes">
-			<img src="" alt="Recipe image" width="450px" class="recipes">
-			<img src="" alt="Recipe image" width="450px" class="recipes">
-			<img src="" alt="Recipe image" width="450px" class="recipes">
-		</div>
+
+		<article class="recipe-box">
+			<p><strong>Healthy</strong></p>
+			<h2>Grandma's Butterscotch PIE</h2>
+		</article>
+		<article class="recipe-box">
+			<p><strong>Healthy</strong></p>
+			<h2>10 Minute Magic Orange Sauce</h2>
+		</article>
+	</section>
+	<section id="popular-recipes">
+		<article class="recipe-box">
+			<p><strong>Healthy</strong></p>
+			<h2>Perfect Avocado Toast For Breakfast</h2>
+		</article>
+		<article class="recipe-box">
+			<p><strong>Healthy</strong></p>
+			<h2>Summer Berry Parf</h2>
+		</article>
 	</section>
 
-	<footer>
+
 		<section class="author">
 			<img src="i/pfp.png" alt="Profile picture" width="300px" height="300px">
 			<div>
 				<p><strong>About the Author</strong></p>
 				<h3>Jhon Doe</h3>
-				<p></p>
+				<p>Lorem ipsum dolor sit amet consectetur adipiscing elit rhoncus tempor cursus, phasellus tempus sodales varius quis parturient augue conubia vestibulum. Orci velit fames in ultrices erat senectus eget quisque, magna ornare laoreet placerat nunc nulla nullam auctor, dictumst bibendum taciti nam vivamus augue rutrum. Morbi malesuada rutrum egestas diam ligula augue massa ante erat lacus, est facilisis posuere elementum quisque fusce phasellus laoreet nibh, feugiat purus porttitor hendrerit iaculis commodo enim eros venenatis.</p>
 			</div>
 		</section>
+	<footer>
+
 
 		<section>
 			<img src="i/logo.png" alt="Page logo" width="250px">
 			<div class="inner-footer">
 				<div class="selections">
-					<button>Categories</button>
-					<button>Latest recipes</button>
-					<button>Most popular recipes</button>
+					<a class="boto-categoria" href="#categories" title="Go to category section">Categories</a>
+					<a class="boto-categoria" href="#latest-categories" title="Go to latest recipes section">Latest recipes</a>
+					<a class="boto-categoria" href="#popular-recipes" title="Go to pouplar recipes section">Most popular recipes</a>
 				</div>
 				<div class="socials">
-					<a href=""><img src="" alt="" width="40px"></a>
-					<a href=""><img src="" alt="" width="40px"></a>
-					<a href=""><img src="" alt="" width="40px"></a>
-					<a href=""><img src="" alt="" width="40px"></a>
+					<a href="https://www.facebook.com"><img src="i/facebook.png" alt="Enllaç a facebook." width="40px"></a>
+					<a href="https://www.instagram.com"><img src="i/instagram.png" alt="Enllaç a instagram." width="40px"></a>
+					<a href="https://www.X.com"><img src="i/twitter.png" alt="Enllaç a twitter." width="40px"></a>
+					<a href="https://www.tiktok.com"><img src="i/tiktok.png" alt="Enllaç a tiktok." width="40px"></a>
 				</div>
 			</div>			
 		</section>
 	</footer>
-
 </body>
 </html>
