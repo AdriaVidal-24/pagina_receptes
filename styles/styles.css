@@ -14,6 +14,7 @@ header {
 	justify-content: space-between;
 	position: sticky;
 	top: 0px;
+	gap: 3%;
 	height: 55px;
 	padding-left: 50px;
 	padding-right: 50px;
@@ -27,6 +28,10 @@ header {
 	align-items: center;
 	gap: 5%;
 	width: 65%;
+}
+
+.header-menu {
+	display: none;
 }
 
 .boto-apartat {
@@ -118,20 +123,24 @@ h1 {
 }
 
 .latest-recipes {
+img {
+	width: 100%;
+}
 h2 {
 	font-size: 2rem;
 	font-weight: normal;
 	margin-bottom: 0;
 }
-	width: 550px;
+	max-width: 550px;
 }
 
 .email {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
+	width: auto;
 	margin-left: 10%;
-	width: 70%;
+	margin-right: 10%;
 	height: 100px;
 	gap: 5%;
 	border-radius: 40px;
@@ -142,19 +151,14 @@ h2 {
 
 .email-input {
 	display: flex;
-	input {
-		background-color: transparent;
-		height: 40px;
-		padding-left: 2%;
-		font-size: 1.2rem;
-		border-radius: 20px;
-		width: 300px;
-		color: black;
-		border: 1px solid #ddbea9;
-	}
+	justify-content: center;
+	width: 100%;
+	gap: 5%;
 	button {
 		height: 40px;
-		width: 160px;
+		width: auto;
+		padding-left: 10%;
+		padding-right: 10%;
 		border-radius: 20px;
 		margin-left: -80px;
 		background-color: #ffe8d6;
@@ -168,6 +172,17 @@ h2 {
 		background-color: #ddc6b4;
 		cursor: pointer;
 	}
+}
+
+.emailTextInput {
+		background-color: transparent;
+		height: 40px;
+		width: 90%;
+		padding-left: 2%;
+		font-size: 1.2rem;
+		border-radius: 20px;
+		color: black;
+		border: 1px solid #ddbea9;	
 }
 
 
@@ -205,7 +220,8 @@ p {
 	background-repeat: no-repeat;
 	background-position: center;
 	padding: 1%;
-	width: 550px;
+	width: 100%;
+	max-width: 630px;
 	height: 550px;
 	h2 {
 		font-weight: normal;
@@ -236,6 +252,10 @@ p {
 	p {
 		margin-top: 0;
 	}
+	img {
+		max-width: 300px;
+		width: 100%;
+	}
 }
 
 footer {
@@ -253,12 +273,23 @@ footer {
 @media (max-width: 1200px) {
 	#latest-section {
 		flex-direction: column;
+		margin-left: 5%;
+		margin-right: 5%;
 	}
 
 
 }
 
 @media (max-width: 850px) {
+
+	.header-menu {
+		display: block;
+	}
+
+	.pfp {
+		display: none;
+	}
+
 	.selections-header {
 		display: none;
 	}
@@ -283,9 +314,8 @@ footer {
 		flex-direction: column;
 		height: auto;
 		padding: 9%;
-		margin: 10%;
-		margin-left: 7%;
 	}
+
 	.email-text {
 		padding-bottom: 10%;
 		width: auto;
@@ -326,5 +356,9 @@ footer {
 
 	footer {
 		height: auto;
+	}
+
+	.latest-recipes {
+		width: auto;
 	}
 }
