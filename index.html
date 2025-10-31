@@ -1,136 +1,185 @@
-<DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <title>Recipes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
 
+    <!-- Metadades -->
+    <!-- Icon -->
     <link rel="icon" href="i/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="i/apple-touch-icon">
 
+    <!-- OpenGraph -->
     <meta property="og:title" content="Recipes">
     <meta property="og:description" content="Cooking recipes.">
     <meta property="og:image" content="i/logo.png">
     <meta property="og:url" content="index.html">
 
+    <!-- Accessibilitat -->
     <meta name="keywords" content="Recipes, Sauce, Pie, Parfaid, Avocado, Toast, Grandma, Butterscotch">
     <meta name="author" content="Jhon Doe">
     <meta name="description" content="Cooking recipes.">
 
     <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
+	<!-- Apartat del header -->
 	<header>
-		<a href="index.html"><img src="i/logo.png" alt="Page logo" max-width="250px" width="100%" height="90%"></a>
-		<div class="selections-header">
-			<a class="boto-apartat" href="#categories" title="Go to category section">Categories</a>
-			<a class="boto-apartat" href="#latest-section" title="Go to latest recipes section">Latest recipes</a>
-			<a class="boto-apartat" href="#popular-recipes" title="Go to pouplar recipes section">Most popular recipes</a>
-		</div>
+
+		<a href="index.html"><img src="i/logo.png" alt="Page logo" width="100%" height="45px"></a>
+
+		<nav class="selections-header">
+			<a class="site-section-button" href="#categories" title="Go to category section">Categories</a>
+			<a class="site-section-button" href="#latest-recipes-section" title="Go to latest recipes section">Latest recipes</a>
+			<a class="site-section-button" href="#popular-recipes-linker" title="Go to pouplar recipes section">Most popular recipes</a>
+		</nav>
+
 		<a href=""><img src="https://avatar.iran.liara.run/public" class="pfp" alt="Profile picture" width="35px"></a>
 		<img src="i/menu.png" class="header-menu" alt="Menu icon" width="35px">
+
 	</header> 	
 
-	<section class="main-recipe">
-		<div>
-			<p>Healthy</p>
-			<h1><strong>10 Minute Magic</strong><br>Orange Sauce</h1>
-			<button class="seerecipe">see recipe</button>
-		</div>
-	</section>
+	<main>
+		<!-- Apartat de la recepta principal -->
+		<section class="main-recipe">
 
-	<section id="categories">
-		<p class="category-viewing">View by category:</p>
-		<div class="categorylist">
-			<button class="category">Appetizers</button>
-			<button class="category">Beverages</button>
-			<button class="category">Desserts</button>
-			<button class="category">Healthy</button>
-		</div>
-	</section>
-
-	<hr>
-
-	<section>
-		<h2 class="section-titles">Latest recipes</h2>
-		<div id="latest-section">
-			<div class="latest-recipes">
-				<img src="https://lipsum.app/550x325/f4eae5/cb997e" alt="Recipe image">
-				<h2>Grandma's Butterscotch PIE</h2>
-				<p><strong>Healthy</strong></p>
-				<p>Lorem ipsum dolor sit amet consectetur adipiscing elit rhoncus tempor cursus, phasellus tempus sodales varius quis parturient augue conubia vestibulum. Orci velit fames in ultrices erat senectus eget quisque. Orci velit fames in ultrices erat senectus eget quisque.</p>
-				<button class="seerecipe">see recipe</button>
+			<div>
+				<p>Healthy</p>
+				<h1><strong>10 Minute Magic</strong><br>Orange Sauce</h1>
+				<button class="seerecipe-button">see recipe</button>
 			</div>
-			<div class="latest-recipes">
-				<img src="https://lipsum.app/550x325/f4eae5/cb997e" alt="Recipe image">
-				<h2>10 Minute Magic Orange Sauce</h2>
-				<p><strong>Healthy</strong></p>
-				<p>Lorem ipsum dolor sit amet consectetur adipiscing elit rhoncus tempor cursus, phasellus tempus sodales varius quis parturient augue conubia vestibulum. Orci velit fames in ultrices erat senectus eget quisque. Orci velit fames in ultrices erat senectus eget quisque.</p>
-				<button class="seerecipe">see recipe</button>
+
+		</section>
+
+		<!-- Apartat de les categories -->
+		<section id="categories">
+
+			<h2 class="caregory-viewing-text">View by category:</h2>
+
+			<div class="categorylist">
+				<button class="category-individual">Appetizers</button>
+				<button class="category-individual">Beverages</button>
+				<button class="category-individual">Desserts</button>
+				<button class="category-individual">Healthy</button>
 			</div>
-		</div>
-	</section>
 
-	<section class="email">
-		<div class="email-text">
-			<h3>Never miss a recipe</h3>
-			<p>Join thousands of Company subscribers and get our best recipes delivered each week!</p>
-		</div>
-		<div class="email-input">
-			<input type="email" class="emailTextInput" placeholder="Type your email">
-			<button>Send</button>
-		</div>
-	</section>
+		</section>
 
-	<h2 class="section-titles">Most popular recipes</h2>
-	<section id="popular-recipes">
-		<article class="recipe-box">
-			<p><strong>Healthy</strong></p>
-			<h2>Grandma's Butterscotch PIE</h2>
-		</article>
-		<article class="recipe-box">
-			<p><strong>Healthy</strong></p>
-			<h2>10 Minute Magic Orange Sauce</h2>
-		</article>
-	</section>
-	<section id="popular-recipes">
-		<article class="recipe-box">
-			<p><strong>Healthy</strong></p>
-			<h2>Perfect Avocado Toast For Breakfast</h2>
-		</article>
-		<article class="recipe-box">
-			<p><strong>Healthy</strong></p>
-			<h2>Summer Berry Parfait</h2>
-		</article>
-	</section>
+		<hr>
 
+		<!-- Apartat de les receptes més recients -->
+		<section>
+			<h2 class="section-titles">Latest recipes</h2>
+			<div id="latest-recipes-section">
 
-	<section class="author">
-		<img src="https://avatar.iran.liara.run/public" alt="Profile picture">
-		<div>
-			<p><strong>About the Author</strong></p>
-			<h3>Jhon Doe</h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipiscing elit rhoncus tempor cursus, phasellus tempus sodales varius quis parturient augue conubia vestibulum. Orci velit fames in ultrices erat senectus eget quisque, magna ornare laoreet placerat nunc nulla nullam auctor, dictumst bibendum taciti nam vivamus augue rutrum. Morbi malesuada rutrum egestas diam ligula augue massa ante erat lacus, est facilisis posuere elementum quisque fusce phasellus laoreet nibh, feugiat purus porttitor hendrerit iaculis commodo enim eros venenatis.</p>
-		</div>
-	</section>
-	<footer>
-		<section class="outer-footer">
-			<img src="i/logo.png" alt="Page logo" width="250px">
-			<div class="inner-footer">
-				<div class="selections-footer">
-					<a class="boto-apartat" href="#categories" title="Go to category section">Categories</a>
-					<a class="boto-apartat" href="#latest-section" title="Go to latest recipes section">Latest recipes</a>
-					<a class="boto-apartat" href="#popular-recipes" title="Go to pouplar recipes section">Most popular recipes</a>
+				<div class="latest-recipes">
+					<img src="https://lipsum.app/550x325/f4eae5/cb997e" alt="Recipe image">
+					<h3>Grandma's Butterscotch PIE</h3>
+					<p><strong>Healthy</strong></p>
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit rhoncus tempor cursus, phasellus tempus sodales varius quis parturient augue conubia vestibulum. Orci velit fames in ultrices erat senectus eget quisque. Orci velit fames in ultrices erat senectus eget quisque.</p>
+					<button class="seerecipe-button">see recipe</button>
 				</div>
+
+				<div class="latest-recipes">
+					<img src="https://lipsum.app/550x325/f4eae5/cb997e" alt="Recipe image">
+					<h3>10 Minute Magic Orange Sauce</h3>
+					<p><strong>Healthy</strong></p>
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit rhoncus tempor cursus, phasellus tempus sodales varius quis parturient augue conubia vestibulum. Orci velit fames in ultrices erat senectus eget quisque. Orci velit fames in ultrices erat senectus eget quisque.</p>
+					<button class="seerecipe-button">see recipe</button>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- Apartat de l'email -->
+		<section class="email">
+
+			<div class="email-text">
+				<h3>Never miss a recipe</h3>
+				<p>Join thousands of Company subscribers and get our best recipes delivered each week!</p>
+			</div>
+
+			<div class="email-input">
+				<input type="email" class="email-text-input" placeholder="Type your email">
+				<button>Send</button>
+			</div>
+
+		</section>
+
+		<!-- Apartat de les receptes més populars -->
+		<section id="popular-recipes-linker">
+			<h2 class="section-titles">Most popular recipes</h2>
+			<div class="popular-recipes">
+
+				<article class="recipe-box">
+					<p><strong>Healthy</strong></p>
+					<h3>Grandma's Butterscotch PIE</h3>
+				</article>
+
+				<article class="recipe-box">
+					<p><strong>Healthy</strong></p>
+					<h3>10 Minute Magic Orange Sauce</h3>
+				</article>
+
+			</div>
+			<div class="popular-recipes">
+
+				<article class="recipe-box">
+					<p><strong>Healthy</strong></p>
+					<h3>Perfect Avocado Toast For Breakfast</h3>
+				</article>
+
+				<article class="recipe-box">
+					<p><strong>Healthy</strong></p>
+					<h3>Summer Berry Parfait</h3>
+				</article>
+
+			</div>
+		</section>
+
+		<!-- Apartat de l'autor -->
+		<section class="author">
+
+			<img src="https://avatar.iran.liara.run/public" alt="Profile picture">
+
+			<div>
+				<p><strong>About the Author</strong></p>
+				<h3>Jhon Doe</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipiscing elit rhoncus tempor cursus, phasellus tempus sodales varius quis parturient augue conubia vestibulum. Orci velit fames in ultrices erat senectus eget quisque, magna ornare laoreet placerat nunc nulla nullam auctor, dictumst bibendum taciti nam vivamus augue rutrum. Morbi malesuada rutrum egestas diam ligula augue massa ante erat lacus, est facilisis posuere elementum quisque fusce phasellus laoreet nibh, feugiat purus porttitor hendrerit iaculis commodo enim eros venenatis.</p>
+			</div>
+
+		</section>
+
+	</main>
+
+	<!-- Footer -->
+	<footer>
+
+		<div class="outer-footer">
+			<img src="i/logo.png" alt="Page logo" width="250px">
+
+			<div class="inner-footer">
+
+				<nav class="selections-footer">
+					<a class="site-section-button" href="#categories" title="Go to category section">Categories</a>
+					<a class="site-section-button" href="#latest-recipes-section" title="Go to latest recipes section">Latest recipes</a>
+					<a class="site-section-button" href="#popular-recipes-linker" title="Go to pouplar recipes section">Most popular recipes</a>
+				</nav>
+
 				<div class="socials">
 					<a href="https://www.facebook.com"><img src="i/facebook.png" alt="Enllaç a facebook." width="40px"></a>
 					<a href="https://www.instagram.com"><img src="i/instagram.png" alt="Enllaç a instagram." width="40px"></a>
 					<a href="https://www.X.com"><img src="i/twitter.png" alt="Enllaç a twitter." width="40px"></a>
 					<a href="https://www.tiktok.com"><img src="i/tiktok.png" alt="Enllaç a tiktok." width="40px"></a>
 				</div>
-			</div>			
-		</section>
+
+			</div>	
+
+		</div>
+
 	</footer>
+
 </body>
 </html>

@@ -16,13 +16,17 @@ header {
 	top: 0px;
 	gap: 3%;
 	height: 55px;
-	padding-left: 50px;
+	padding-left: 2em;
 	padding-right: 50px;
 	background-color: #ffe8d6;
 	border-bottom: 2px solid black;
 	z-index: 1000;
 }
 
+/*Classes comuns*/
+
+
+/*Apartat del header*/
 .selections-header, .selections-footer {
 	display: flex;
 	align-items: center;
@@ -30,27 +34,29 @@ header {
 	width: 65%;
 }
 
-.header-menu {
-	display: none;
-}
-
-.boto-apartat {
+.site-section-button {
 	font-size: 1.1rem;
 	text-decoration: none;
 	color: black;
 }
 
-.boto-apartat:hover {
+.site-section-button:hover {
 	padding-top: 1%;
 	padding-bottom: 1%;
 	color: #bdbba8;
 	border-bottom: 3px solid #bdbba8;
 }
 
+.header-menu {
+	display: none;
+	cursor: pointer;
+}
+
+/*Recepta principal*/
 .main-recipe {
+	display: flex;
 	font-size: 1.2rem;
 	font-weight: bold;
-	display: flex;
 	justify-content: flex-start;
 	padding-left: 10%;
 	align-items: center;
@@ -65,7 +71,7 @@ h1 {
 	font-weight: normal;
 }
 
-.seerecipe {
+.seerecipe-button {
 	color: #cc9c82;
 	border: 2px solid #cc9c82;
 	border-radius: 20px;
@@ -75,6 +81,7 @@ h1 {
 	cursor: pointer;
 }
 
+/*Apartat de categories*/
 #categories {
 	display: flex;
 	justify-content: flex-start;
@@ -85,7 +92,7 @@ h1 {
 	align-items: center;
 }
 
-.category-viewing {
+.caregory-viewing-text {
 	padding: 10px;
 	padding-right: 100px;
 	font-size: 1.3rem;
@@ -97,7 +104,7 @@ h1 {
 	gap: 10%;
 }
 
-.category {
+.category-individual {
 	color: black;
 	border: none;
 	font-size: 1.3rem;
@@ -106,6 +113,7 @@ h1 {
 	cursor: pointer;
 }
 
+/*Apartat de receptes més recents*/
 .section-titles {
 	margin-left: 8%;
 	margin-top: 5%;
@@ -114,26 +122,27 @@ h1 {
 	margin-bottom: 6%;
 }
 
-#latest-section {
+#latest-recipes-section {
 	display: flex;
 	justify-content: center;
 	gap: 34px;
 	align-items: center;
-	margin-bottom: 65px;	
+	margin-bottom: 65px;
+	margin-left: 5%;
+	margin-right: 5%;	
 }
 
-.latest-recipes {
-img {
-	width: 100%;
-}
-h2 {
-	font-size: 2rem;
-	font-weight: normal;
-	margin-bottom: 0;
-}
-	max-width: 550px;
+.latest-recipes img {
+		width: 100%;
 }
 
+.latest-recipes h3 {
+		font-size: 2rem;
+		font-weight: normal;
+		margin-bottom: 0;
+}
+
+/*Apartat de l'email*/
 .email {
 	display: flex;
 	justify-content: center;
@@ -141,7 +150,6 @@ h2 {
 	width: auto;
 	margin-left: 10%;
 	margin-right: 10%;
-	height: 100px;
 	gap: 5%;
 	border-radius: 40px;
 	padding: 6%;
@@ -154,8 +162,9 @@ h2 {
 	justify-content: center;
 	width: 100%;
 	gap: 5%;
-	button {
-		height: 40px;
+}
+.email-input button {
+		height: 45px;
 		width: auto;
 		padding-left: 10%;
 		padding-right: 10%;
@@ -163,18 +172,19 @@ h2 {
 		margin-left: -80px;
 		background-color: #ffe8d6;
 		border: none;
-	}
-	button:hover {
-		background-color: #eed7c5;
-		cursor: pointer;
-	}
-	button:active {
-		background-color: #ddc6b4;
-		cursor: pointer;
-	}
 }
 
-.emailTextInput {
+.email-input button:hover {
+		background-color: #eed7c5;
+		cursor: pointer;
+}
+
+.email-input button:active {
+		background-color: #ddc6b4;
+		cursor: pointer;
+}
+
+.email-text-input {
 		background-color: transparent;
 		height: 40px;
 		width: 90%;
@@ -185,7 +195,6 @@ h2 {
 		border: 1px solid #ddbea9;	
 }
 
-
 .email-text {
 	font-size: 1.2rem;
 	display: flex;
@@ -193,17 +202,16 @@ h2 {
 	justify-content: center;
 	align-items: flex-start;
 	width: 50%;
-h3 {
-	font-size: 2rem;
-	font-weight: normal;
-	margin: 0;
-}
-p {
-	margin: 0;
-}
 }
 
-#popular-recipes {
+.email-text h3 {
+		font-size: 2rem;
+		font-weight: normal;
+		margin: 0;
+}
+
+/*Apartat de les receptes més populars*/
+.popular-recipes {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
@@ -217,24 +225,26 @@ p {
 	flex-direction: column;
 	justify-content: flex-end;
 	background-image: url(https://lipsum.app/640x480/f4eae5/cb997e);
-	background-repeat: no-repeat;
 	background-position: center;
-	padding: 1%;
+	margin-bottom: 1em;
+	padding: 0.5em;
 	width: 100%;
-	max-width: 630px;
-	height: 550px;
-	h2 {
+	height: 550px;	
+}
+
+.recipe-box h3 {
 		font-weight: normal;
 		font-size: 2rem;
 		margin-top: 0;
 		padding-bottom: 20px;
-	}
-	p {
-		font-weight: bolder;
-		margin-bottom: 0;
-	}
 }
 
+.recipe-box p {
+		font-weight: bolder;
+		margin-bottom: 0;
+}
+
+/*Autor*/
 .author {
 	display: flex;
 	justify-content: flex-start;
@@ -244,20 +254,25 @@ p {
 	gap: 10%;
 	background-color: #ddbea9;
 	padding-right: 12%;
-	h3 {
+}
+
+.author h3 {
 		font-size: 3rem;
 		margin-top: 0;
 		margin-bottom: 0;
-	}
-	p {
-		margin-top: 0;
-	}
-	img {
-		max-width: 300px;
-		width: 100%;
-	}
 }
 
+.author p {
+		margin-top: 0;
+}
+
+.author img {
+		max-width: 300px;
+		width: 100%;
+		padding: 1em;
+}
+
+/*Footer*/
 footer {
 	padding: 5%;
 	height: 10%;
@@ -270,17 +285,15 @@ footer {
 	justify-content: space-between;
 }
 
+/*Apartat de media queries*/
 @media (max-width: 1200px) {
-	#latest-section {
+	#latest-recipes-section {
 		flex-direction: column;
-		margin-left: 5%;
-		margin-right: 5%;
 	}
-
 
 }
 
-@media (max-width: 850px) {
+@media (max-width: 865px) {
 
 	.header-menu {
 		display: block;
@@ -306,9 +319,13 @@ footer {
 		justify-content: space-between;
 	}
 
-	.category {
+	.category-individual {
 		padding: 5%;
 	}	
+
+	.latest-recipes {
+		width: auto;
+	}
 
 	.email {
 		flex-direction: column;
@@ -321,7 +338,7 @@ footer {
 		width: auto;
 	}
 
-	#popular-recipes {
+	.popular-recipes {
 		flex-direction: column;
 		align-items: center;
 	}
@@ -347,7 +364,7 @@ footer {
 		height: 100%;
 	}
 
-	.boto-apartat:hover {
+	.site-section-button:hover {
 		border-bottom: none;
 		border-left: 3px solid #bdbba8;
 		padding-left: 15px;
@@ -356,9 +373,5 @@ footer {
 
 	footer {
 		height: auto;
-	}
-
-	.latest-recipes {
-		width: auto;
 	}
 }
